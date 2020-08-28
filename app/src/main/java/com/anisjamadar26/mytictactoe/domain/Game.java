@@ -2,6 +2,12 @@ package com.anisjamadar26.mytictactoe.domain;
 
 import androidx.lifecycle.MutableLiveData;
 
+/**
+ * This is logic for this app
+ * It contains two players, 2D array of type Cell, current player value, next player value
+ * and winner player value
+ */
+
 public class Game {
 
     private static final int BOARD_SIZE = 3;
@@ -26,6 +32,11 @@ public class Game {
         currentPlayer = player1;
     }
 
+    /**
+     *This method checks if array of cells contains any winning player by calculating
+     * horizontal, vertical, diagonal positions and if any positions has same value then
+     * it updated winner value
+     */
     public boolean hasGameEnded() {
         if (hasSameHorizontalCells() || hasSameVerticalCells() || hasSameDiagonalCells()) {
             winner.setValue(currentPlayer);
@@ -89,6 +100,9 @@ public class Game {
         return true;
     }
 
+    /**
+     * This method checks if provided cells values are equal
+     */
     private boolean areEqual(Cell... cells) {
         if (cells == null || cells.length == 0) {
             return false;
@@ -110,6 +124,9 @@ public class Game {
         return true;
     }
 
+    /**
+     * After each move, player is switched
+     */
     public void switchPlayer() {
         currentPlayer = currentPlayer == player1 ? player2 : player1;
     }

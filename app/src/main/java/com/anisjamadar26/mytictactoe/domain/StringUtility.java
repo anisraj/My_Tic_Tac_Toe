@@ -1,5 +1,8 @@
 package com.anisjamadar26.mytictactoe.domain;
 
+/**
+ * This class used for making string from numbers and checking string is empty or not
+ */
 public class StringUtility {
 
     public static String stringFromNumbers(int... numbers) {

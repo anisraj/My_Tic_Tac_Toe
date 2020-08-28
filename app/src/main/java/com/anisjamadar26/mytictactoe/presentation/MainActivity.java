@@ -17,6 +17,13 @@ import com.anisjamadar26.mytictactoe.framework.DaggerApplicationComponent;
 
 import javax.inject.Inject;
 
+/***
+ * In this Activity, adding Dagger Dependencies and injecting GameViewModel
+ * Using Data Binding
+ * By using LiveData, observing winner value and next player value from view model
+ * Using that winner value, showing game end dialog
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Inject

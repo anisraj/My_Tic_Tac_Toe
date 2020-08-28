@@ -5,6 +5,10 @@ import com.anisjamadar26.mytictactoe.domain.Game;
 import dagger.Module;
 import dagger.Provides;
 
+/**
+ * Implemented Dagger for this project
+ * This module provides new Game object
+ */
 @Module
 public class ApplicationModule {
 

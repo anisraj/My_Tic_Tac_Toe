@@ -10,6 +10,12 @@ import com.anisjamadar26.mytictactoe.domain.StringUtility;
 
 import javax.inject.Inject;
 
+/**
+ * Injecting Game object using Dagger in constructor
+ * By using Data Binding, passing this Class object to layout view as data
+ * So when button from view clicked, method from this class is called
+ */
+
 public class GameViewModel {
 
     public ObservableArrayMap<String, String> cells;
