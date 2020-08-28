@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Tic Tac Toe</string>
+    <string name="XTurn">X Turn</string>
+    <string name="noWinnerText">No One</string>
+    <string name="playerNameX">X</string>
+    <string name="playerNameO">O</string>
+    <string name="gameEndText">Game End</string>
+    <string name="winsText"> wins</string>
+    <string name="doneText">Done</string>
+    <string name="resetGame">Reset Game</string>
+</resources>
